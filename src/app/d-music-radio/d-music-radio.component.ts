@@ -40,7 +40,7 @@ export class DMusicRadioComponent implements OnInit, AfterViewInit {
 
   selectTrack(track: string) {
     this.currentTrack = track;
-    this.musicUrl = `/music/${track}.mp3`;
+    this.musicUrl = `music/${track}.mp3`;
     if(this.audioPlayer && this.audioPlayer.nativeElement) {
       this.audioPlayer.nativeElement.play();
       this.isPlaying = true;
