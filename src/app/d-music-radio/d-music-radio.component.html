@@ -1,0 +1,14 @@
+<div class="radio-container">
+  <h2>D R A D I O</h2>
+  <p>Now Playing: {{ currentTrack }}.mp3</p>
+  <audio #audioPlayer [src]="musicUrl" autoplay></audio>
+  <br>
+  <div (click)="togglePlayback()" style="cursor:pointer; margin-top:8px; border:1px solid blue; padding:4px;">
+    {{ isPlaying ? 'Pause' : 'Play' }}
+  </div>
+  <div class="playlist" style="margin-top: 1em;">
+      <span *ngFor="let track of tracks" (click)="selectTrack(track)">
+        {{ track }}.mp3
+      </span>
+  </div>
+</div>

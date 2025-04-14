@@ -1,0 +1,15 @@
+<div class="message-card">
+  <h2>messages!</h2>
+  <form action="https://formspree.io/f/xrbpjwlr" method="POST">
+    <!-- Changed hidden input to use 'email' as Formspree expects -->
+    <input type="hidden" name="email" value="anonymous@example.com">
+    <!-- Optional: set default subject -->
+    <input type="hidden" name="_subject" value="New Anonymous Message">
+  
+    <div>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+  
+    <button type="submit">send message (anonymous!!!)</button>
+  </form>
+</div>

@@ -1,0 +1,48 @@
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.davidavidavi-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  height: 100%; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+}
+
+.davidavidavi-wrapper {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.move-left {
+  animation: scrollLeft 80s linear infinite;
+}
+
+.move-right {
+  animation: scrollRight 80s linear infinite;
+}
+
+span {
+  font-family: 'Chivo Mono', monospace;
+  color: rgb(0,0,255);
+  display: inline-block;
+  white-space: nowrap;
+}

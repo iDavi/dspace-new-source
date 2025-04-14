@@ -1,0 +1,18 @@
+<div class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <!-- Repeat your image set MANY times -->
+        <ng-container *ngFor="let i of [].constructor(5)">
+          <ng-container *ngFor="let image of images">
+            <img [src]="image" alt="Carousel Image">
+          </ng-container>
+        </ng-container>
+        <ng-container *ngFor="let i of [].constructor(5)">
+            <ng-container *ngFor="let image of images">
+              <img [src]="image" alt="Carousel Image">
+            </ng-container>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+  

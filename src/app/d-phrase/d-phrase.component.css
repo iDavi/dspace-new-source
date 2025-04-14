@@ -1,0 +1,14 @@
+.phrase {
+  color: blue;
+  font-family: 'Chivo Mono', monospace;
+  color: rgb(0,0,255);
+}
+
+.randomize-button {
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.randomize-button:hover {
+  cursor: pointer;
+}

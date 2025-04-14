@@ -1,0 +1,14 @@
+span {
+    font-family: 'Chivo Mono', monospace;
+    color: rgb(0,0,255);
+    display: inline-block;
+    font-size: 3rem;
+    width: 100vw;
+    overflow-wrap: anywhere;
+    margin-top: 10vh;
+
+}
+
+img {
+    width: 25%;
+}

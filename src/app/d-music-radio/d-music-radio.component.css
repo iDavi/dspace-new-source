@@ -1,0 +1,29 @@
+.radio-container {
+    font-size: 0.8rem;
+  text-align: center;
+  width: 50vw;
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #0d00ff;
+  color: blue;
+}
+
+.radio-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.radio-container p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+
+
+.playlist span {
+    display: block;
+    margin-top: 10px;
+    border-bottom: 1px solid blue;
+    user-select: none;
+    cursor: pointer;
+}
