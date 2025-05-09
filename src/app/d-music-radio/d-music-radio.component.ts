@@ -9,7 +9,7 @@ import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angula
   styleUrls: ['./d-music-radio.component.css']
 })
 export class DMusicRadioComponent implements OnInit, AfterViewInit {
-  tracks: string[] = ['creep-radiohead', 'the-ghost-of-you-mcr', 'helena-mcr', 'pastel-ghost', 'angel-of-darkness-nightcore', 'cemetery-drive-mcr'];
+  tracks: string[] = ['round-table-puzzle', 'the-ghost-of-you-mcr', 'u-x-me-laurales', 'pastel-ghost', 'angel-of-darkness-nightcore', 'pipopipiooii', 'between-the-cureee','people-i-dont-like-upsahl','helena-so-long-and-goodnight-mcr','artist-bo-burnham','you-lose-margarina-bay','carlosito-jalapeno-keller-synth-muito-foda', 's3rl-s3rl-s3rl'];
   currentTrack: string = '';
   musicUrl: string = '';
   isPlaying: boolean = false;
@@ -35,7 +35,7 @@ export class DMusicRadioComponent implements OnInit, AfterViewInit {
   randomizeMusic() {
     const randomIndex = Math.floor(Math.random() * this.tracks.length);
     this.currentTrack = this.tracks[randomIndex];
-    this.musicUrl = `/music/${this.currentTrack}.mp3`;
+    this.musicUrl = `music/${this.currentTrack}.mp3`;
   }
 
   selectTrack(track: string) {
